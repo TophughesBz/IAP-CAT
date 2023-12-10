@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background: linear-gradient(105deg, #B3B1A0 55%, #777C74 calc(45% + 1px));
+            background-repeat: no-repeat;
+            min-height :620px;
+
+        }
+        nav{
+            display:inline-flex;
+            justify-content:space-between;
+            align-items:center;
+            height: 70px;
+            width: 80%;
+            margin-bottom: 10px;
+        }
+        .nav-links a{
+            color: #242424;
+            margin-left: 40px;
+            text-transform: capitalize;
+            text-decoration: none;
+        }
+         nav .nav-links a:hover, nav .nav-links a:active{
+            color: coral;
+        }
+        .logo{
+            color: #777C74;
+            font-size: 45px;
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #242424;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: gold;
+        }
+        .contact-form input[type="text"],
+        .contact-form textarea {
+            width: 80%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        .contact-form input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        .contact-form input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <h2 class="logo">Biograpghy.info</h2>
+            <div class="nav-links">
+                <a class="active" href="./index.html">Home</a>
+                <a href="./achievements.html">Achievements</a>
+                <a href="./contact.html">Contact Us</a>
+                
+            </div>
+        </nav>
+    </header>
+
+<div class="container">
+    <h1>Contact Us</h1>
+    <div class="contact-form">
+        <form>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Your Email:</label>
+            <input type="text" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+<script src="form-handle.js"></script>
+</body>
+</html>
